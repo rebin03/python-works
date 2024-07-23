@@ -1,0 +1,48 @@
+# Dictionary in python
+
+# >> Dictionary is a collection of key - value pairs
+# >> key should be unique
+# >> it is mutable
+# >> it is unordered
+# >> it is indexed
+# >> it is changeable
+# >> it is dynamic
+
+# syntax
+# ------
+# dict = {key1:value1, key2:value2, key3:value3, key4:value4, key5:value5, key6:value6, ...}
+
+# example
+# --------
+dict = {"name": "Rahul", "age": 20, "city": "Delhi", "country": "India"}
+
+dict['name'] = "Hari" #overwites the value if the key present, else add as a new pair
+print(dict['name'])
+
+print(dict.keys()) #return the key in the dictionary
+
+
+
+# dictionary Methods
+# ------------------
+# 1. clear() - removes all the elements from the dictionary
+# 2. copy() - returns a copy of the dictionary
+# 3. fromkeys() - returns a dictionary with the specified keys and values
+# 4. get() - returns the value of the specified key
+# 5. items() - returns a list containing a tuple for each key value pair
+# 6. keys() - returns a list containing the dictionary's keys
+# 7. pop() - removes the element with the specified key
+# 8. popitem() - removes the last inserted key-value pair
+# 9. setdefault() - returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+# 10. update() - updates the dictionary with the specified key-value pairs
+# 11. values() - returns a list of all the values in the dictionary
+
+
+
+student = {"name":"hari", "course":"data science", "place":"chennai"}
+
+new = student.items()
+print(new)   # dict_items([('name', 'hari'), ('course', 'fullstack'), ('place', 'chennai')])
+
+
+        

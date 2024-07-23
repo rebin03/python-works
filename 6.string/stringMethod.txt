@@ -1,0 +1,35 @@
+# String methods
+----------------
+
+1. len() - return length of string
+2. lower() - lowercase all charecters
+3. upper() - uppercase all charecters
+4. title()
+5. capitalize() - capitalize the first charecter of string
+6. count() - count the number of a charecter in text
+7. find()
+8. replace()
+9. split() - split the string at specified place
+10. strip() - removes any whitespace or specified string from the beginning or the end.
+11. startswith() - to check whether the string is starting with a specific character or a set of character.
+12. endswith() - to check whether the string is ending with a specific character or a set of character.
+13. isalnum() - return true if alphabet or number
+14. isalpha() - return true if it is an alphabet
+15. isdigit() - return true if ut is a digit
+16. islower()
+17. isupper()
+18. isspace()
+19. join()
+20. ljust()
+21. rjust()   
+22. center()
+23. zfill()
+24. index() - return the index nuber of a charecter
+25. rindex()
+26. isdecimal()
+27. isnumeric()
+28. isprintable()
+29. isidentifier()
+
+=> use lower() when you specifically want to ensure a character is lowercase, like for presenting to users or persisting data
+=> use casefold() when you want to compare that result to another casefold-ed value.
