@@ -34,5 +34,5 @@ dictionary Methods
 7. pop() - removes the element with the specified key
 8. popitem() - removes the last inserted key-value pair
 9. setdefault() - returns the value of the specified key. If the key does not exist: insert the key, with the specified value
-10. update() - updates the dictionary with the specified key-value pairs
-11. values() - returns a list of all the values in the dictionary
+10.update() - updates the dictionary with the specified key-value pairs
+11.values() - returns a list of all the values in the dictionary
