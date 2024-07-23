@@ -1,10 +1,18 @@
 import random
 import logo_art
 
+EASY_LEVEL = 10
+HARD_LEVEL = 5
+
 print(logo_art.logo)
 
 def set_difficulty(level):
-    return 10 if level == "easy" else 5
+    if level == "easy":
+        return EASY_LEVEL
+    elif level == "hard":
+        return HARD_LEVEL
+    else:
+        return
 
 def check_answer(guessed_num, num, attempts):
     if guessed_num == num:
@@ -26,6 +34,10 @@ def guess_game():
     level = input("Choose the level of dificulty...Type 'easy' or 'hard': ")
 
     attempts = set_difficulty(level)
+    
+    if attempts != EASY_LEVEL and attempts != HARD_LEVEL:
+        print("You have entered wrong difficulty...Play again!!")
+        return
     
     guessed_num = 0
     while guessed_num != num:
