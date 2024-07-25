@@ -1,0 +1,69 @@
+# Utility functions
+
+print() - Outputs the given objects to the standard output device (e.g., screen) with a newline at the end.
+
+input() - Reads a line from input, converts it to a string (stripping a trailing newline), and returns that.
+
+type() - Returns the type of an object.
+        Syntax: type(object)
+
+len() - Returns the length of an object (e.g., string, list, tuple).
+        Syntax: len(object)
+
+sum() - Sums the items of an iterable.
+        Syntax: sum(iterable, start)
+
+max() - Returns the largest item in an iterable or among multiple arguments.
+        Syntax: max(iterable, *[, key, default]) or max(arg1, arg2, *args[, key])
+
+
+min() - Returns the smallest item in an iterable or among multiple arguments.
+        Syntax: min(iterable, *[, key, default]) or min(arg1, arg2, *args[, key])
+
+abs() - Returns the absolute value of a number.
+        Syntax: abs(number)
+
+round() - Rounds a floating-point number to the nearest integer or to the specified number of decimal places.
+        Syntax: round(number, ndigits=None)
+
+        eg:
+        print(round(3.14159))       # Output: 3
+        print(round(3.14159, 2))    # Output: 3.14
+        print(round(3.14159, 3))    # Output: 3.142
+
+sorted() -  Returns a sorted list from the items in an iterable.
+        Syntax: sorted(iterable, key=None, reverse=False)
+
+range() - Generates a sequence of numbers.
+        Syntax: range(start, stop, step)
+
+isinstance() - Checks if an object is an instance of a class or a tuple of classes.
+        Syntax: isinstance(object, classinfo)
+
+zip() - Aggregates elements from two or more iterables (tuples) and returns an iterator.
+        Syntax: zip(*iterables)
+
+        eg:
+        a = [1, 2, 3]
+        b = ['a', 'b', 'c']
+        print(list(zip(a, b)))  # Output: [(1, 'a'), (2, 'b'), (3, 'c')]
+
+map() - Applies a function to all items in an input list.
+        Syntax: map(function, iterable)
+
+        eg:
+        def square(x):
+        return x * x
+
+        print(list(map(square, [1, 2, 3, 4])))  # Output: [1, 4, 9, 16]
+
+filter()  - Constructs an iterator from elements of an iterable for which a function returns true.
+        Syntax: filter(function, iterable)
+
+        eg:
+        def is_even(x):
+        return x % 2 == 0
+
+        print(list(filter(is_even, [1, 2, 3, 4])))  # Output: [2, 4]
+
+
