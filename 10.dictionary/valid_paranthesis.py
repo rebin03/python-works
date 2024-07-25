@@ -4,7 +4,7 @@
 # use dict,stack
 
 text = "[]"
-parenthesis = {")":"(","]":"[","}":"{"}
+parenthesis = {")":"(","]":"[","}":"{",">":"<"}
 stack = []
 
 is_valid = True
