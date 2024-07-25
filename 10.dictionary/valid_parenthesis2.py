@@ -26,9 +26,9 @@ for symbol in user_input:
         current_symbol = symbol_stack[top]
         current_symbol_closing = symbol_table[current_symbol]
         
-        if symbol == current_symbol_closing:\
+        if symbol == current_symbol_closing:
             
-            top -= 1
+            top -= 1 
             symbol_stack.pop()
             
         else:
