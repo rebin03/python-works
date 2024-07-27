@@ -7,11 +7,8 @@ length = len(arr)
 for i in range(length):
     if i%2 != 0:
         even_pos_num.append(arr[i])
-
-print(arr)
-        
+  
 even_pos_num.reverse()
-print(even_pos_num)
 
 j=0
 for i in range(length):
