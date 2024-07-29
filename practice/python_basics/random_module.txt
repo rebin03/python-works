@@ -1,0 +1,16 @@
+-> import random
+
+# randint(a,b) - return integer number in a given range (a,b) where a and b included
+
+# randrange(a,b) - return integer number in a given range (a,b) where a included and b excluded
+
+# random(a,b) - return floating number in the range (0,1) where 0 included and 1 excluded
+
+# uniform(a,b) - return floating number in a given range (a,b) where a included and b excluded
+
+# choice(list) - return random object from the given list
+
+# choices(list, k=3) - Return a k sized list of random elements from the given list
+
+# shuffle(list) - Return a k sized list of random elements from the given list
+
