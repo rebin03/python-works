@@ -19,6 +19,8 @@ print(samsung_mobile_name)
 price_filter = [dict.get("title") for dict in mobiles if dict.get("price") in range(23000,40001)]
 print(price_filter)
 
+#<----------------------------------------------------------------------------------------------------------> 
+
 max_price = 0
 for dict in mobiles:
     if dict.get("price") > max_price:
@@ -26,3 +28,24 @@ for dict in mobiles:
 print(max_price)
 costly_mobile = [dict.get("title") for dict in mobiles if dict.get("price") == max_price]
 print(costly_mobile)
+
+#<----------------------------------------------------------------------------------------------------------->
+
+def get_mark(mob):
+    return mob.get("price")
+
+costly_mobile = max(mobiles, key=get_mark)
+print(costly_mobile)
+
+chaepest_mobile = min(mobiles, key=get_mark)
+print(chaepest_mobile)
+
+sorted_mobile = sorted(mobiles, key=get_mark, reverse=True)
+print(sorted_mobile)
+
+#<----------------------------------------------------------------------------------------------------------->
+
+# in case of sum() we can't specify a Key=get_mark as parameter. So to get sum of total price we can approach like the following
+
+total_cost = sum([mob.get("price") for mob in mobiles])
+print(total_cost)
