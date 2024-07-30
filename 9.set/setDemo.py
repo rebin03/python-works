@@ -13,7 +13,8 @@
 # set Methods
 # -----------
 # add() - add element in the set
-# remove() - remove element from the set
+# remove() - remove element from the set (This will show error if the specified element to remove is not in the set)
+# discard() - remove element from the set if it is present in the set
 # clear() - remove all elements from the set
 # pop() - remove and return an arbitary element from the set
 # union() - return a new set with all elements from the both sets
@@ -23,7 +24,6 @@
 # issubset() - return True if all elements in the set are present in another set
 # issuperset() - return True if all elements in another set are present in the set
 # update() - update the set with the union of itself and others (add element from any collection to the set.)
-# discard() - remove element from the set if it is present in the set
 # copy() - return a shallow copy of the set
 # len() - return the length of the set
 # symmetric_difference() - combine all element from 2 set and remove common elements
