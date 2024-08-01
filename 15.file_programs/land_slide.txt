@@ -1,0 +1,17 @@
+Kerala 2018 14
+Uttarakhand 2018 15
+HimachalPradesh 2018 10
+Kerala 2019 12
+Uttarakhand 2019 5
+HimachalPradesh 2019 4
+Kerala 2020 66
+Uttarakhand 2020 6
+HimachalPradesh 2020 8
+Kerala 2021 35
+HimachalPradesh 2021 37
+Maharashtra 2021 117
+Uttarakhand 2021 4
+Karnataka 2021 0
+Kerala 2022 3
+Uttarakhand 2022 1
+HimachalPradesh 2022 2
