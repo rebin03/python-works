@@ -156,12 +156,38 @@ countries_region_filter = [c.get("name") for c in country_data if is_border_with
 
 #--------------------------------------------------------------------------------------------------------------------------------------------
 # 21. Which countries have alternate spellings that include the word 'Republic'?
+
+def is_altSpelling_with_republic(c):
+    if c.get("altSpellings") is not None:
+        for w in c.get("altSpellings"):
+            if "Republic" in w:
+                return True
+
+countries_altSpelling_filter = [c.get("name") for c in country_data if is_altSpelling_with_republic(c)]
+# print(countries_altSpelling_filter)
+
 #--------------------------------------------------------------------------------------------------------------------------------------------
 # 22. List countries that are part of the African Union (AU).
+
+countries_AU = [c.get("name") for c in country_data if get_regional_blocs(c) == "AU"]
+# print(countries_AU)
+
 #--------------------------------------------------------------------------------------------------------------------------------------------
 # 23. List all countries with a population less than 1 million.
+
+countries_population_filter = [c.get("name") for c in country_data if c.get("population") < 1000000]
+# print(countries_population_filter)
+
 #--------------------------------------------------------------------------------------------------------------------------------------------
 # 24. Find countries where the capital city's name is the same as the country's name.
+
+countries_capital_filter = [c.get("name") for c in country_data if c.get("capital") == c.get("name")]
+# print(countries_capital_filter)
+
 #--------------------------------------------------------------------------------------------------------------------------------------------
 # 25. Which countries have regional blocs that include 'European Union'?
+
+countries_EU = [c.get("name") for c in country_data if get_regional_blocs(c) == "EU"]
+print(countries_EU)
+
 #--------------------------------------------------------------------------------------------------------------------------------------------
