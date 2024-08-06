@@ -10,10 +10,10 @@ country_data = load(f)
 #--------------------------------------------------------------------------------------------------------------------------------------------
 # 1. Find the largest populated country.    
 
-def get_population(c):
-    return c.get("population")
+# def get_population(c):
+#     return c.get("population")
 
-largest_populated_country = max(country_data, key=get_population)
+largest_populated_country = max(country_data, key=lambda c:c.get("population"))
 # print(f"{largest_populated_country.get("name")} : {largest_populated_country.get("population")}")
 
 #--------------------------------------------------------------------------------------------------------------------------------------------
@@ -188,6 +188,41 @@ countries_capital_filter = [c.get("name") for c in country_data if c.get("capita
 # 25. Which countries have regional blocs that include 'European Union'?
 
 countries_EU = [c.get("name") for c in country_data if get_regional_blocs(c) == "EU"]
-print(countries_EU)
+# print(countries_EU)
 
 #--------------------------------------------------------------------------------------------------------------------------------------------
+# 26. Find the otherNames of given country if no otherNames print country name
+
+def fetch_country_by_name(name):
+    return [c for c in country_data if c.get("name") == name][0]
+
+country_data_by_name = fetch_country_by_name("Ivory Coast")
+
+if "regionalBlocs" in country_data_by_name:
+    bloc_data = country_data_by_name.get("regionalBlocs")[0]
+    
+    # if "otherNames" in bloc_data:
+    #     print(bloc_data.get("otherNames"))
+    # else:
+    #     print(country_data_by_name.get("name"))
+        
+#--------------------------------------------------------------------------------------------------------------------------------------------
+# 27. largest region by area
+
+all_region = list({c.get("region") for c in country_data})
+region_dict = {}
+
+for c in country_data:
+    
+    r = c.get("region")
+    
+    if r in region_dict :
+        region_dict[r] += c.get("area", 0)
+    else:
+        region_dict[r] = c.get("area", 0)
+
+
+value_key = [(v,k) for k,v in region_dict.items()]
+largest_region = max(value_key)       
+print(largest_region)
+        
