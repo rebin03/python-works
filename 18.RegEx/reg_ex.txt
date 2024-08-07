@@ -1,0 +1,29 @@
+text = "abc123 @K#7LMdef"
+
+=> "[abf]" - will check for either a,b or f ("abf" will check for the pattern abf in text)
+
+=> "[a-k]" - Check for alphabets from a to k
+
+=> "[a-z]" - Check for all lower case alphabets
+
+=> "[A-Z]" - Check for all upper case alphabets
+
+=> "[a-zA-Z]" - Check for all alphabets
+
+=> "[0-9]" - Check for digits
+
+=> "[a-zA-Z0-9]" - Check for alphanumeric characters
+
+=> "[^0-9]" - Check for all charecters other than digits (^ symbol exclude the specified patterns)
+
+=> "[^a-zA-Z0-9]" - Check for special charecters and space
+
+=> "[\s]" - Check for space
+
+=> "[^a-zA-Z0-9\s]" - Check only for special charecters
+
+=> "[a-z]{3}" - [a-z]{3} will check with the given limit. ie, here with 3 consecutive occuring alphabet patterns.
+
+=> "([c-h]|[t-z])" - chech for the alphabets in the range c-h or t-z
+
+=> "([a-z]{3}|[0-9]{3})" - Check for 3 consecutive digit ot alphabets in the given text
