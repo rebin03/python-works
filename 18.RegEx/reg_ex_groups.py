@@ -12,13 +12,13 @@ pattern4 = "[A-Z]" # [A-Z] Check for all upper case alphabets
 
 pattern5 = "[a-zA-Z]" # [a-zA-Z] Check for all alphabets
 
-pattern6 = "[0-9]" # [0-9] Check for digits
+pattern6 = "[0-9]" # [0-9] or "\d" Check for digits
 
-pattern7 = "[a-zA-Z0-9]" # [a-zA-Z0-9] Check for alphanumeric characters
+pattern7 = "[a-zA-Z0-9]" # [a-zA-Z0-9] or "\w" Check for alphanumeric characters
 
-pattern8 = "[^0-9]" # Check for all charecters other than digits (^ symbol exclude the specified patterns)
+pattern8 = "[^0-9]" # [^0-9] or "\D" Check for all charecters other than digits (^ symbol exclude the specified patterns)
 
-pattern9 = "[^a-zA-Z0-9]" # Check for special charecters and space
+pattern9 = "[^a-zA-Z0-9]" # [^a-zA-Z0-9] or "\W" Check for special charecters and space
 
 pattern10 = "[\s]" # Check for space
 

@@ -12,13 +12,15 @@ text = "abc123 @K#7LMdef"
 
 => "[0-9]" - Check for digits
 
-=> "[a-zA-Z0-9]" - Check for alphanumeric characters
+=> "[a-zA-Z0-9]" or "\w" - Check for alphanumeric characters
 
-=> "[^0-9]" - Check for all charecters other than digits (^ symbol exclude the specified patterns)
+=> "[^0-9]" or "\d" - Check for all charecters other than digits (^ symbol exclude the specified patterns)
 
-=> "[^a-zA-Z0-9]" - Check for special charecters and space
+=> "[^a-zA-Z0-9]" or "\w" - Check for special charecters and space (ie, exclude alphanumeric characters)
 
 => "[\s]" - Check for space
+
+=> "[\S"] - Exclude space
 
 => "[^a-zA-Z0-9\s]" - Check only for special charecters
 
