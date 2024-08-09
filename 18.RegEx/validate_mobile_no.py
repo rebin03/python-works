@@ -2,7 +2,7 @@ from re import fullmatch
 
 number = input("Enter mobile number: ")
 
-pattern = "(91)[0-9]{10}"
+pattern = "(91)(-|\\s)?[6-9]\\d{9}"
 
 matcher = fullmatch(pattern, number)
 

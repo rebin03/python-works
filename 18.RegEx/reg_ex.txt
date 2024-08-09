@@ -1,5 +1,9 @@
 text = "abc123 @K#7LMdef"
 
+"+" -> match one or more
+"*" -> match zero or more
+"?" -> optional
+
 => "[abf]" - will check for either a,b or f ("abf" will check for the pattern abf in text)
 
 => "[a-k]" - Check for alphabets from a to k
