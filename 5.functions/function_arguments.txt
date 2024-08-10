@@ -1,0 +1,36 @@
+Types of Python Function Arguments
+----------------------------------
+Python supports various types of arguments that can be passed at the time of the function call.
+In Python, we have the following function argument types in Python:
+
+=> Default argument:
+    - Default arguments are values that are provided while defining functions.
+    - The assignment operator = is used to assign a default value to the argument.
+    - Default arguments become optional during the function calls.
+    - If we provide a value to the default arguments during function calls, it overrides the default value.
+    - The function can have any number of default arguments.
+    - Default arguments should follow non-default arguments.
+
+=> Keyword arguments (named arguments):
+    - Functions can also be called using keyword arguments of the form kwarg=value.
+    - During a function call, values passed through arguments don’t need to be in the order of parameters in the function definition. 
+    - But all the keyword arguments should match the parameters in the function definition.
+    
+=> Positional arguments:
+    - During a function call, values passed through arguments should be in the order of parameters in the function definition.
+
+=> Arbitrary arguments (variable-length arguments *args and **kwargs):
+    - If we don’t know the number of arguments needed for the function in advance, we can use arbitrary arguments
+    - Two types of arbitrary arguments:
+
+        -> Arbitrary positional arguments:
+
+                - In this, an asterisk (*) is placed before a parameter in function definition 
+                  which can hold non-keyword variable-length arguments. 
+                - These arguments will be wrapped up in a tuple. 
+                - Before the variable number of arguments, zero or more normal arguments may occur.
+
+        -> Arbitrary Keyword arguments:
+                
+                - For arbitrary positional argument, a double asterisk (**) is placed before a parameter 
+                  in a function which can hold keyword variable-length arguments.
