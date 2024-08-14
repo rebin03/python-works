@@ -24,9 +24,17 @@ def calculator(num1,num2):
 
     return res
 
-num1, num2 = map(int, input("Enter two numbers: ").split())
-result = calculator(num1,num2)
-print(f"Result is :{result}")
+flag = True
+while flag:
+    
+    num1, num2 = map(int, input("Enter two numbers: ").split())
+    result = calculator(num1,num2)
+    print(f"Result is :{result}")
+    
+    s = input("Do you want to continue calculating? type 'yes' or 'no'\n").lower()
+    
+    if s == 'no':
+        flag = False
 
     
     
