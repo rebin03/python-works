@@ -1,5 +1,7 @@
 # Method Resolution Order (MRO) is the order in which Python looks for a method in a hierarchy of classes.
 # We can use the method mro() to find the MRO of the child class
+# mro() method - it returns a list
+# _mro_ attribute - it returns a tuple
 
 class Human():
     
@@ -51,7 +53,8 @@ boy1 = Boy("John", 1, "Python")
 boy1.work()
 Male.work(boy1) # We can access the parent method with same name by specifying class name.
 Human.work(boy1)
-print(Boy.mro()) # This is the MRO of child class Boy: [<class '__main__.Boy'>, <class '__main__.Human'>, <class '__main__.Male'>, <class 'object'>]
+print(Boy.mro()) # This will return MRO in list: [<class '__main__.Boy'>, <class '__main__.Human'>, <class '__main__.Male'>, <class 'object'>]
+print(Boy.__mro__) # This will return MRO in tuple: (<class '__main__.Boy'>, <class '__main__.Human'>, <class '__main__.Male'>, <class 'object'>)
 
 print(boy1.num_eyes, boy1.num_nose)
 
