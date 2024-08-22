@@ -1,5 +1,5 @@
 # Method Resolution Order (MRO) is the order in which Python looks for a method in a hierarchy of classes.
-# We can use the mehtod mro() to find the MRO of the child class
+# We can use the method mro() to find the MRO of the child class
 
 class Human():
     
