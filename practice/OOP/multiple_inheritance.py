@@ -3,7 +3,7 @@
 # mro() method - it returns a list
 # _mro_ attribute - it returns a tuple
 
-class Human():
+class Human:
     
     def __init__(self, num_heart):
         print("Calling init from Human")
@@ -18,7 +18,7 @@ class Human():
         print("I can work")
         
 
-class Male():
+class Male:
     
     def __init__(self, name):
         self.name = name
