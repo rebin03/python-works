@@ -1,0 +1,26 @@
+Abstraction
+-----------
+
+• Abstraction is used to hide the internal functionality of the function from the users. 
+• The users only interact with the basic implementation of the function, but inner working is hidden. 
+• User is familiar with that "what function does" but they don't know "how it does."
+
+=> In Python, an abstraction is used to hide the irrelevant data/class in order to reduce the complexity. It also enhances the application efficiency.
+
+Abstraction classes
+-------------------
+• In Python, abstraction can be achieved by using abstract classes and interfaces. (By default python doesn't have abstraction)
+
+• A class that consists of one or more abstract method is called the abstract class.
+• Abstract methods do not contain their implementation.
+• Abstract class can be inherited by the subclass and abstract method gets its definition in the subclass.
+• Abstraction classes are meant to be the blueprint of the other class.
+• An abstract class can be useful when we are designing large functions.
+
+
+=> Python provides the abc module to use the abstraction in the Python program
+
+    Syntax:
+
+    from abc import ABC  
+    class ClassName(ABC):  
