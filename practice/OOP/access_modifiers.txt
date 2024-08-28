@@ -1,0 +1,24 @@
+Access modifiers
+-----------------
+
+- Python uses the ‘_’ symbol to determine the access control for a specific data member or a member function of a class.
+- Access specifiers in Python have an important role to play in securing data from unauthorized access and in preventing it from being exploited.
+
+A Class in Python has three types of access modifiers:
+
+• Public Access Modifier
+• Protected Access Modifier
+• Private Access Modifier
+
+=> Public Access Modifier:
+    - The members of a class that are declared public are easily accessible from any part of the program.
+    - All data members and member functions of a class are public by default.
+
+=> Protected Access Modifier:
+    - The members of a class that are declared protected are only accessible to a class derived from it.
+    - Data members of a class are declared protected by adding a single underscore ‘_’ symbol before the data member of that class. 
+
+=> Private Access Modifier:
+    - The members of a class that are declared private are accessible within the class only, private 
+    - access modifier is the most secure access modifier.
+    - Data members of a class are declared private by adding a double underscore ‘__’ symbol before the data member of that class.
