@@ -18,15 +18,17 @@ class Person:
     
     def speaks(self):
         print("Blah Blah Blah")
-        
-def display(obj):
-    obj.swim()
-    obj.speaks()
+
+class Display:
+    
+    def display(obj):
+        obj.swim()
+        obj.speaks()
 
 duck = Duck()
 dog = Dog()
 person = Person()
-
-display(duck)
-display(dog)
-display(person) # This will show error as the Person class don't have method speaks
+d = Display
+d.display(duck)
+d.display(dog)
+# d.display(person) # This will show error as the Person class don't have method speaks
