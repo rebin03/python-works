@@ -1,0 +1,28 @@
+Polymorphism
+------------
+
+• The word polymorphism means having many forms. 
+• In programming, polymorphism means the same function name (but different signatures) being used for different types. 
+• The key difference is the data types and number of arguments used in function.
+
+-> Example of inbuilt polymorphic functions:
+
+    # len() being used for a string
+    print(len("geeks"))
+
+    # len() being used for a list
+    print(len([10, 20, 30]))
+
+=> In python, polymorphism can achieved by following concept:
+
+    • Duck typing
+    • Method overloading
+    • Operator overloading
+    • Method overriding
+
+1. Duck typing:
+
+    - Duck Typing is a type system used in dynamic languages(Python, Perl, Ruby, PHP, Javascript, etc.)
+    - where the type or the class of an object is less important than the method it defines.
+    - Using Duck Typing, we do not check types at all. Instead, we check for the presence of a given method or attribute.
+    - Therefore, what really matters is if the object has particular attributes at run time.
