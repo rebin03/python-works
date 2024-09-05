@@ -5,7 +5,7 @@ class Student:
     age:int
     gender:str
     
-    def set_student(self, name, roll_no, course, age, gender):
+    def __init__(self, name, roll_no, course, age, gender):
         self.name = name
         self.roll_no = roll_no
         self.course = course
@@ -16,7 +16,6 @@ class Student:
         print(f"Name: {self.name}\nRoll no: {self.roll_no}\nCourse: {self.course}\nAge: {self.age}\nGender: {self.gender}")
         
 
-obj = Student()
+obj = Student("Rebin", 35, "Python", 22, "Male")
 
-obj.set_student("Rebin", 35, "Python", 22, "Male")
 obj.display()
