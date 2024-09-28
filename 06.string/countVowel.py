@@ -16,9 +16,9 @@ print(f"Consonants count: {c_count}")
 
 
 # another logic
-count =0
-for ch in vowels:
+# count =0
+# for ch in vowels:
 
-    count += text.count(ch)
+#     count += text.count(ch)
 
-print(count)
+# print(count)

@@ -9,7 +9,7 @@
 
 source_word = "listen"
 target_word = "ten"
-curr_index = 0
+# curr_index = 0
 
 def is_kangaroo_word(source_word, target_word):
     j = 0

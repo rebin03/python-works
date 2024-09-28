@@ -24,7 +24,7 @@
 21. rjust()   
 22. center()
 23. zfill()
-24. index() - return the index nuber of a charecter
+24. index() - return the index number of a charecter
 25. rindex()
 26. isdecimal()
 27. isnumeric()

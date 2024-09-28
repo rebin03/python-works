@@ -203,4 +203,4 @@ genres_movie_count = {g:all_genres.count(g) for g in all_genres}
 sorted_movies = sorted(movies, key= lambda mov:mov.get("title"))
 
 sorted_movies_titles = [mov.get("title") for mov in sorted_movies]
-print(sorted_movies_titles)
+# print(sorted_movies_titles)
