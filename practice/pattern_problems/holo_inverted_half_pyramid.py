@@ -1,4 +1,4 @@
-def print_hollow_inverted_half_pyramid(rows):
+def hollow_inverted_half_pyramid(rows):
     for i in range(rows, 0, -1):
         for j in range(rows - i):
             print(" ", end="")
@@ -12,4 +12,4 @@ def print_hollow_inverted_half_pyramid(rows):
 # Example usage
 num_rows = 5
 print("Hollow Inverted Half Pyramid:")
-print_hollow_inverted_half_pyramid(num_rows)
+hollow_inverted_half_pyramid(num_rows)
